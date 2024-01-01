@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: shipping
-        image: janudeep10/shipping:v1
+        image: anudeep10/shipping:v1
         envFrom:
         - configMapRef:
             name: shipping
