@@ -24,7 +24,7 @@ spec:
       containers:
       - name: cart
         image: anudeep10/cart:v1
-        imagePullPolicy: ifNotPresent 
+        imagePullPolicy: IfNotPresent 
         envFrom:
         - configMapRef:
             name: cart
