@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: anudeep10/catalogue:1.0.0
+        image: anudeep10/catalogue:v1
         resources:
           requests:
             cpu: "50m"
