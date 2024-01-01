@@ -27,6 +27,7 @@ spec:
         envFrom:
         - configMapRef:
             name: cart
+      imagePullPolicy: ifNotPresent      
 ---
 apiVersion: v1
 kind: Service
