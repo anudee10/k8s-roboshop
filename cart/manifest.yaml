@@ -24,10 +24,11 @@ spec:
       containers:
       - name: cart
         image: anudeep10/cart:v1
+        imagePullPolicy: ifNotPresent 
         envFrom:
         - configMapRef:
             name: cart
-      imagePullPolicy: ifNotPresent      
+           
 ---
 apiVersion: v1
 kind: Service
