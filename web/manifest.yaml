@@ -164,7 +164,7 @@ metadata:
   name: web
   namespace: roboshop
 spec:
-  type: LoadBalancers
+  type: LoadBalancer
   selector:
     app: web
     tier: web
