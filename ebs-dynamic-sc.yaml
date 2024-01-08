@@ -3,6 +3,10 @@ kind: StorageClass
 metadata:
   name: roboshop-dynamic-ebs
 provisioner: ebs.csi.aws.com
+reclaimPolicy: Retain # default value is Delete
+allowVolumeExpansion: true
+mountOptions:
+  - discard
 volumeBindingMode: WaitForFirstConsumer
 parameters:
   csi.storage.k8s.io/fstype: xfs
